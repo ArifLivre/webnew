@@ -45,6 +45,8 @@
 /* about me */
 .about {
   display: flex;
+  margin: 30px 0;
+  padding: 20px 0;
 }
 .about .max-width {
   max-width: 1400;
@@ -70,4 +72,108 @@
   height: 3px;
   background-color: #111;
   transform: translateX(-50%);
+}
+
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about-content .kolom {
+  width: calc(50% - 30px);
+}
+
+.about .about-content .kiri .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about .about-content .kiri p {
+  text-align: justify;
+}
+
+.about .about-content .kanan .bars {
+  margin-bottom: 6px;
+}
+
+.about .about-content .kanan .info {
+  display: flex;
+  margin-bottom: 7px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about-content .kanan span {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.about .about-content .kanan .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+.about .about-content .kanan .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #f5d355;
+}
+
+.about .about-content .kanan .html::before {
+  width: 95%;
+}
+.about .about-content .kanan .css::before {
+  width: 80%;
+}
+.about .about-content .kanan .js::before {
+  width: 88%;
+}
+.about .about-content .kanan .php::before {
+  width: 75%;
+}
+.about .about-content .kanan .mysql::before {
+  width: 89%;
+}
+
+/* responsive */
+
+@media (max-width: 990px) {
+  .about .max-width {
+    padding: 0 50px;
+  }
+
+  .about .about-content .kolom {
+    width: calc(50% - 20px);
+  }
+
+  .about .about-content .kiri .text {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 947px) {
+  .about .max-width {
+    padding: 0 40px;
+  }
+
+  .about .about-content .kiri p {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .about .about-content .kolom {
+    width: 100%;
+    margin: 20px;
+  }
 }
