@@ -1,46 +1,73 @@
 .fontnav {
-    font-family: 'Bebas Neue', cursive;
-    
+  font-family: "Bebas Neue", cursive;
 }
-.jumbotron{
-    padding-top: 2rem ;
-    background-color: #f5d355;
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #f5d355;
 }
 .gel {
-    padding-bottom: -10rx;
+  padding-bottom: -10rx;
 }
-.foto{
-    width: 200px;
-    border-radius:50% ;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0,0)  !important
+.foto {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0) !important;
 }
 .halo {
-    margin-top: -10px;
+  margin-top: -10px;
 }
-.About{
-    margin-top: -25px;
-    margin-left: -10px;
-    
+.About {
+  margin-top: -25px;
+  margin-left: -10px;
 }
 .cont {
-    color: white;
-    
+  color: white;
 }
-.School{
-    background-color: #f5d355;
-      
+.School {
+  background-color: #f5d355;
 }
 
 .foot {
-    background-color: #ebeae8;
+  background-color: #ebeae8;
 }
 .kotak {
-    background-color: white !important
+  background-color: white !important;
 }
 .images {
-    width: 3.5cm;
-    height: 4cm;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1rem;
+  width: 3.5cm;
+  height: 4cm;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+}
+
+/* modification */
+/* about me */
+.about {
+  display: flex;
+}
+.about .max-width {
+  max-width: 1400;
+  padding: 0 100px;
+  margin: auto;
+}
+
+.about .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+}
+
+.about .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background-color: #111;
+  transform: translateX(-50%);
 }
